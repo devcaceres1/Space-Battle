@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html {
+            background-image: url("https://cdn.wccftech.com/wp-content/uploads/2016/09/spacee-2060x1288.jpg");
+            background-repeat: no-repeat;
+            background-size:750px 760px;
+            font:message-box;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            color: rgb(161, 81, 5);
+            text-decoration: underline white; 
+        }
+
+        .instructions {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }   
+
+        .list{
+            justify-content: center;
+            align-content: center;
+            color: rgb(104, 197, 255);
+            text-decoration: underline white; 
+            text-decoration-style: wavy;
+        }
+        
+        li{
+            margin: 1.5em 0;
+
+        }
+        ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+    ul li {
+  counter-increment: my-awesome-counter;
+}
+    ul li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: white;
+  font-weight: bold;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="title">
+    <h1> Denisse's Space Battle  </h1>
+    </div>
+
+    <div class="instructions">
+    <h3 class="title" style= "font-size:30px"> Instructions </h3>
+    </div>
+    <ul class="list" style="font-weight: bold; font-size:20px">
+        <li> To start the game input
+            <p> <i> Begin() </i></p>
+        </li>
+        <br>
+        <li> When prompt you can enter
+            <p> <i> Attack </i></p>  </li>
+        <br>
+        <br>
+        <li>Or you want to quit the game enter 
+            <p> <i> Retreat </i></p>
+        </li>
+        <br>
+        <li> Don't be a quitter though! Attack until all 6 alienShips are D.E.A.D!!!!</li>
+    </ul>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
