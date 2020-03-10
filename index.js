@@ -1,3 +1,4 @@
+alert("Space Battle, a console log game!");
 let countShip = 0
 let humanShip ={
     hull : 20,
@@ -13,7 +14,7 @@ class Space {
     }
 
     let alienShip = [];
-        for (let i= 0; i < 5; i++){
+        for (let i= 0; i < 6; i++){
             alienShip.push(new Space(i));
         }
             //console.log(alienShip);
@@ -29,6 +30,7 @@ class Space {
         }
         }
     };
+    
     function alienAttack(){
         if (alienShip[countShip].accuracy >= .6 && alienShip[countShip].accuracy <= .8) {
             humanShip.hull -= alienShip.firepower;
@@ -39,10 +41,10 @@ class Space {
         }    
     };
 
-    alert("Space Battle, a console log game!");
-let game = false;
+    let game = false;
+    
     function begin(){
-        while (countShip < 5 && humanShip.hull > 0 && game === false){
+        while (countShip < 6 && humanShip.hull > 0 && game === false){
         let action = prompt("Which action do you choose?");
             if (action.toLowerCase() === "attack"){
             humanAttack();
